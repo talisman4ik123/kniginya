@@ -1,0 +1,33 @@
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick {
+    &-arrow {
+        position: absolute;
+        font-size: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $green;
+        top: 46%;
+    }
+
+    &-prev {
+        background-image: url(../images/icons/slider-arrow-prev.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 10px;
+    }
+
+    &-next {
+        background-image: url(../images/icons/slider-arrow-next.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        right: 10px;
+    }
+}

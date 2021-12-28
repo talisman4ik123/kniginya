@@ -1,0 +1,46 @@
+.rating {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    & label {
+        transition: all .3s;
+    }
+
+    &:not(:checked)>input {
+        display: none;
+    }
+
+    &:not(:checked)>label {
+        width: 40px;
+        cursor: pointer;
+        font-size: 40px;
+        color: lightgrey;
+        text-align: center;
+        line-height: 1;
+    }
+
+    &:not(:checked)>label:before {
+        content: '★';
+    }
+
+    &>input:checked~label {
+        color: gold;
+    }
+
+    &:not(:checked)>label:hover,
+    &:not(:checked)>label:hover~label {
+        color: gold;
+    }
+
+    &>input:checked+label:hover,
+    &>input:checked+label:hover~label,
+    &>input:checked~label:hover,
+    &>input:checked~label:hover~label,
+    &>label:hover~input:checked~label {
+        color: gold;
+    }
+}
