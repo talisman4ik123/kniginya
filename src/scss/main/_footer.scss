@@ -1,0 +1,209 @@
+.footer {
+    background-color: #2C2C2C;
+    color: white;
+
+    &__inner {
+        @include adaptiveValue("padding-top", 50, 20);
+        padding-bottom: 25px;
+    }
+
+    &__top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include adaptiveValue("padding-bottom", 50, 35);
+    }
+
+    &__logo {
+        margin-right: 10px;
+        .logo__text {
+            @include adaptiveValue("font-size", 18, 16);
+            line-height: 22px;
+            color: white;
+        }
+    }
+
+    &__menu {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        .menu__subtitle {
+            @include adaptiveValue("margin-bottom", 25, 18);
+        }
+    
+        .menu__list {
+            flex-direction: column;
+        }
+    
+        .menu__item {
+            margin-right: 0;
+            margin-top: 0;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+                @include adaptiveValue("margin-bottom", 16, 10);
+            }
+        }
+    
+        .menu__link {
+            @include adaptiveValue("font-size", 14, 13);
+            line-height: 24px;
+            letter-spacing: 0.03em;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 18, 16);
+        line-height: 22px;
+    }
+
+    &__contacts {
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 15px;
+    
+        .contacts__item {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 25, 15);
+            }
+            &::before {
+                @include adaptiveValue("font-size", 18, 16);
+                color: white;
+                margin-right: 10px;
+            }
+        }
+    
+        .contacts__span {
+            font-weight: 500;
+            @include adaptiveValue("font-size", 14, 13);
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            max-width: 200px;
+        }
+    
+        .contacts__group {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .contacts__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+        }
+    }
+
+    &__social {
+        margin-left: 10px;
+        margin-top: 15px;
+        .social__list {
+            display: flex;
+        }
+    
+        .social__item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    
+        .social__link {
+            &::before {
+                @include adaptiveValue("font-size", 20, 18);
+            }
+        }
+    }
+}
+
+.contacts {
+
+    &__subtitle {
+        @include adaptiveValue("margin-bottom", 25, 18);
+    }
+}
+
+.social {
+
+    &__subtitle {
+        @include adaptiveValue("margin-bottom", 30, 20);
+    }
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        white-space: nowrap;
+        font-weight: 500;
+        @include adaptiveValue("font-size", 14, 12);
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #9E9E9E;
+    }
+
+    &__span {
+        @include adaptiveValue("margin-right", 5, 3);
+        @include adaptiveValue("margin-left", 5, 3);
+        font-weight: 500;
+        @include adaptiveValue("font-size", 14, 12);
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #9E9E9E;
+    }
+}
+
+.footer-copyright {
+
+    &__text {
+        font-size: 12px;
+        line-height: 22px;
+        color: #E7E7E7;
+        text-align: center;
+    }
+}
+
+@media (max-width: 830px) {
+    .footer__logo {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links__list {
+        display: block;
+    }
+    .footer-links__span {
+        display: none;
+    }
+    .footer-links__link {
+        line-height: 1;
+        white-space: pre-wrap;
+    }
+    .footer-links__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

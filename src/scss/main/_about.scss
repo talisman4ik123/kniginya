@@ -1,0 +1,32 @@
+.about {
+    background-color: #E5E5E5;
+
+    &__inner {
+        @include adaptiveValue("padding-bottom", 80, 50);
+    }
+
+    &__text {
+        font-family: $fontSubFamile;
+        line-height: 30px;
+        @include adaptiveValue("line-height", 30, 24);
+        @include adaptiveValue("font-size", 14, 12);
+        color: #2C2C2C;
+        margin-bottom: 20px;
+        @include adaptiveValue("margin-bottom", 20, 15);
+    }
+
+    &__span {
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        @include adaptiveValue("margin-bottom", 30, 25);
+        @include adaptiveValue("margin-top", 30, 25);
+        font-family: $fontSubFamile;
+        font-weight: 700;
+        font-size: 18px;
+        @include adaptiveValue("font-size", 18, 16);
+        line-height: 180%;
+        color: #2C2C2C;
+    }
+}

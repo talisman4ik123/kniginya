@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?8jp54c');
+  src:  url('../fonts/icons.eot?8jp54c#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?8jp54c') format('truetype'),
+    url('../fonts/icons.woff?8jp54c') format('woff'),
+    url('../fonts/icons.svg?8jp54c#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-shopping-bag:before {
+  content: "\e900";
+}
+._icon-arrow-left:before {
+  content: "\e908";
+}
+._icon-arrow-right:before {
+  content: "\e90d";
+}
+._icon-buy:before {
+  content: "\e901";
+  color: #ff8a50;
+}
+._icon-ckeckbox:before {
+  content: "\e902";
+  color: #ff8a50;
+}
+._icon-clock:before {
+  content: "\e903";
+  color: #ff8a50;
+}
+._icon-date:before {
+  content: "\e904";
+  color: #ff8a50;
+}
+._icon-down-arrow:before {
+  content: "\e905";
+}
+._icon-fb:before {
+  content: "\e906";
+  color: #fff;
+}
+._icon-Inst:before {
+  content: "\e907";
+  color: #fff;
+}
+._icon-like:before {
+  content: "\e909";
+  color: #9e9e9e;
+}
+._icon-location:before {
+  content: "\e90a";
+  color: #fff;
+}
+._icon-mail:before {
+  content: "\e90b";
+  color: #fff;
+}
+._icon-phone:before {
+  content: "\e90c";
+}
+._icon-scales:before {
+  content: "\e90e";
+  color: #9e9e9e;
+}
+._icon-search:before {
+  content: "\e90f";
+  color: #ff8a50;
+}
+._icon-tw:before {
+  content: "\e910";
+  color: #fff;
+}

@@ -1,6 +1,64 @@
 <header class="header">
     <div class="header__container">
         <div class="header__inner">
+            <div class="logo header__logo">
+                <a href="index.html" class="logo__link">
+                    <img src="@img/logo.png" alt="Логотип сайта kniginya" class="logo__img">
+                    <span class="logo__text">Kniginya</span>
+                </a>
+            </div>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="paymentAndDelivery.html" class="menu__link">Оплата и доставка</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Акции</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Мир Книг</a></li>
+                    <li class="menu__item"><a href="binding.html" class="menu__link">Индивидуальный переплет</a></li>
+                    <li class="menu__item"><a href="toContactUs.html" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__icons header-icons">
+                <a href="tel:+380669501330" class="header-icons__link _icon-phone">
+                </a>
+                
+                <a href="" class="header-icons__link _icon-shopping-bag">
+                    <span class="header-icons__span">4</span>
+                </a>
+                @@include('../html/burger.html',{})
+                <div class="burger-content">
+                    <div class="burger-content__main">
+                        <nav class="menu burger-content__menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="paymentAndDelivery.html" class="menu__link">Оплата и доставка</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Акции</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Мир Книг</a></li>
+                                <li class="menu__item"><a href="binding.html" class="menu__link">Индивидуальный переплет</a></li>
+                                <li class="menu__item"><a href="toContactUs.html" class="menu__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="burger-content__contacts contacts">
+                            <ul class="contacts__list">
+                                <li class="contacts__item _icon-clock">
+                                    <span class="contacts__span">с 10 до 21</span>
+                                </li>
+                                <li class="contacts__item _icon-location">
+                                    <span class="contacts__span">Украина, Одесса Космонавта Комарова, 10</span>
+                                </li>
+                                <li class="contacts__item _icon-phone">
+                                    <div class="contacts__group">
+                                        <a href="tel:+380669501330" class="contacts__link">+38 066 950-13-30</a>
+                                        <a href="tel:+380989501330" class="contacts__link">+38 098 950-13-30</a>
+                                    </div>
+                                </li>
+                                <li class="contacts__item _icon-mail">
+                                    <a href="mailto:kniginya.com@gmail.com" class="contacts__link">kniginya.com@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>

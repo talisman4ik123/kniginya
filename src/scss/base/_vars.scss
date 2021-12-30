@@ -1,16 +1,18 @@
 // Шрифт по умолчанию
-$fontFamily: "";
-$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontFamily: "Montserrat";
+$fontSubFamile: "Open Sans";
+$fontSize: rem(12); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #000; // Цвет шрифта по умолчанию
+$mainColor: #2C2C2C; // Цвет шрифта по умолчанию
+$orange: #FF8A50;
 
 // Минимальная ширина страницы
 $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1108;
 // Общий отступ у контейнера
 $containerPadding: 30;
 

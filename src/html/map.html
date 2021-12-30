@@ -1,0 +1,27 @@
+<div class="map" id="map">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [46.422517, 30.717397],
+                zoom: 18
+            });
+            myMap.controls.remove('zoomControl');  
+            myMap.controls.remove('trafficControl');  
+            myMap.controls.remove('typeSelector'); 
+            myMap.controls.remove('fullscreenControl');
+            myMap.controls.remove('rulerControl');
+            myMap.controls.remove('Button');
+            myMap.controls.remove('geolocationControl');
+            myMap.controls.remove('searchControl');
+            var myGeoObject = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [46.422517, 30.717397]
+            }
+            });
+            myMap.geoObjects.add(myGeoObject);
+        }
+    </script>
+</div>

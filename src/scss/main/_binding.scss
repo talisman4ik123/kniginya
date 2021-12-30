@@ -1,0 +1,42 @@
+.binding {
+    background-color: #E5E5E5;
+    .title {
+        @include adaptiveValue("font-size", 36, 28);
+    }
+    &__inner {
+        @include adaptiveValue("padding-bottom", 80, 50);
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        @include adaptiveValue("font-size", 18, 17);
+        line-height: 180%;
+        color: #2C2C2C;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 14, 13);
+        line-height: 180%;
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        @include adaptiveValue("font-size", 14, 13);
+        line-height: 180%;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__span {
+        display: block;
+        @include adaptiveValue("font-size", 14, 13);
+        line-height: 180%;
+        margin-bottom: 10px;
+    }
+}
