@@ -25,7 +25,7 @@
                         <h1 class="title">
                             Связаться с нами
                         </h1>
-                        <div class="to-contact-us__content">
+                        <div class="to-contact-us__content contact-content">
                             <ul class="contact__list">
                                 <li class="contact__item _icon-clock">
                                     <span class="contact__span">с 10 до 21</span>
@@ -34,8 +34,10 @@
                                     <span class="contact__span">Украина, Одесса Космонавта Комарова, 10</span>
                                 </li>
                                 <li class="contact__item _icon-phone">
-                                    <a href="tel:+380669501330" class="contact__link">+38 066 950-13-30</a>
-                                    <a href="tel:+380989501330" class="contact__link">+38 098 950-13-30</a>
+                                    <div class="contact__group">
+                                        <a href="tel:+380669501330" class="contact__link">+38 066 950-13-30</a>
+                                        <a href="tel:+380989501330" class="contact__link">+38 098 950-13-30</a>
+                                    </div>
                                 </li>
                                 <li class="contact__item _icon-mail">
                                     <a href="mailto:kniginya.com@gmail.com" class="contact__link">kniginya.com@gmail.com</a>
@@ -108,27 +110,59 @@
                                     </ul>
                                 </div>
                             </div>
-                            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank" class="to-contact-us__form form-write-to-us">
+                            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank" class="to-contact-us__form form-write-to-us" id="contact-form">
                                 <fieldset class="form-write-to-us__fieldset">
                                     <legend class="form-write-to-us__legend">Написать нам</legend>
 
-                                    <label for="input-name" class="form-write-to-us__label">Вашe имя:</label>
-                                    <input type="text" name="name" placeholder="Введите ваше имя" class="form-write-to-us__input" id="input-name">
+                                    <div class="input-group">
+                                        <label for="input-name" class="form-write-to-us__label">Вашe имя*:</label>
+                                        <span class="tooltip">только русские символы</span>
+                                        <input  type="text" 
+                                                name="name" 
+                                                placeholder="Введите ваше имя" 
+                                                class="form-write-to-us__input"
+                                                autocomplete="off"
+                                                data-reg="^[а-яёА-ЯЁ]+$"
+                                                id="input-name">
+                                    </div>
 
-                                    <label for="input-email" class="form-write-to-us__label">Ваш email*:</label>
-                                    <input type="email" name="mail" required placeholder="Введите ваш email" class="form-write-to-us__input" id="input-email">
+                                    <div class="input-group">
+                                        <label for="input-email" class="form-write-to-us__label">Ваш email*:</label>
+                                        <span class="tooltip">формат: admin@mail.ru</span>
+                                        <input  type="email" 
+                                                name="mail" 
+                                                placeholder="Введите ваш email" 
+                                                class="form-write-to-us__input" 
+                                                id="input-email"
+                                                autocomplete="off"
+                                                data-reg="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                                        >
+                                    </div>
 
                                     <label for="textarea-message" class="form-write-to-us__label">Введите ваш вопрос:</label>
-                                    <textarea name="message" placeholder="Введите ваш email" id="textarea-message"></textarea>
+                                    <textarea name="message" placeholder="Введите ваш вопрос" id="textarea-message" class="form-write-to-us__input form-write-to-us__textarea"></textarea>
 
-                                    <label for="input-capture" class="form-write-to-us__label">Введите код, указанный на картинке:*:</label>
+                                    <label for="input-capture" class="form-write-to-us__label">Введите код, указанный на картинке*:</label>
                                     <div class="form-write-to-us__group">
-                                        <input type="text" name="capture" placeholder="Введите ваше имя" class="form-write-to-us__input" id="input-capture">
-                                        <img src="images/capture/capture1.jpg" alt="Капча" class="form-write-to-us__capture">
+                                        <input type="text" name="capture" placeholder="Введите Код" class="form-write-to-us__input" id="input-capture">
+                                        <img src="images/capture/capture1.png" alt="Капча" class="form-write-to-us__capture">
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <svg class="svg-refresh" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                                        <g>
+                                            <path style="fill:#2C2C2C;" d="M2.083,9H0.062H0v5l1.481-1.361C2.932,14.673,5.311,16,8,16c4.08,0,7.446-3.054,7.938-7h-2.021
+                                                c-0.476,2.838-2.944,5-5.917,5c-2.106,0-3.96-1.086-5.03-2.729L5.441,9H2.083z"/>
+                                            <path style="fill:#2C2C2C;" d="M8,0C3.92,0,0.554,3.054,0.062,7h2.021C2.559,4.162,5.027,2,8,2c2.169,0,4.07,1.151,5.124,2.876
+                                                L11,7h2h0.917h2.021H16V2l-1.432,1.432C13.123,1.357,10.72,0,8,0z"/>
+                                        </g>
+                                        </svg>
                                     </div>
                                     <div class="checkbox__group">
-                                        <label for="form-write-to-us-checkbox" class="checkbox__label"></label>
-                                        <input type="checkbox" name="TermsOfUse" id="form-write-to-us-checkbox" class="checkbox__input">
+                                        <label for="form-write-to-us-checkbox" class="checkbox__label">
+                                            <p class="checkbox__text">Я даю согласие на обработку и использование моих персональных данных.</p>
+                                            <input type="checkbox" name="TermsOfUse" id="form-write-to-us-checkbox" class="checkbox__input">
+                                            <span class="checkbox__span"></span>
+                                        </label>
                                     </div>
                                     <button type="submit" class="form-write-to-us__btn">Отправить</button>
                                 </fieldset>

@@ -1,0 +1,333 @@
+.to-contact-us {
+
+    background-color: #E5E5E5;
+
+    &__inner {
+        @include adaptiveValue("padding-bottom", 90, 40);
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+    }
+}
+
+.contact {
+    &-content {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(189, 189, 189, 0.04);
+        border-radius: 12px;
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 35px;
+        padding-top: 49px;
+        padding-right: 80px;
+        @include adaptiveValue("padding-right", 80, 30);
+        padding-bottom: 10px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 28, 10);
+        }
+        &::before {
+            color: #FF8A50;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+    }
+
+    &__span {
+        display: block;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 170%;
+        
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 170%;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.who-are-we {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(189, 189, 189, 0.04);
+    border-radius: 12px;
+    margin-right: 20px;
+    &__box {
+        margin-bottom: 20px;
+        padding: 20px 40px 0px 20px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-family: $fontSubFamile;
+        font-size: 14px;
+        @include adaptiveValue("font-size", 14, 12);
+        line-height: 180%;
+        max-width: 602px;
+    }
+
+    &__span {
+        font-weight: bold;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        @include adaptiveValue("padding-bottom", 40, 20);
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(0deg, #FAFAFA, #FAFAFA);
+        border-radius: 12px;
+        @include adaptiveValue("padding-right", 70, 10);
+        @include adaptiveValue("padding-left", 70, 10);
+        @include adaptiveValue("padding-top", 20, 10);
+        @include adaptiveValue("padding-bottom", 20, 10);
+        max-width: 618px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 88px;
+            @include adaptiveValue("margin-right", 88, 25);
+        }
+    }
+
+    &__svg {
+        @include adaptiveValue("margin-bottom", 20, 10);
+    }
+
+    &__caption {
+        font-weight: normal;
+        @include adaptiveValue("font-size", 12, 9);
+        line-height: 16px;
+        text-align: center;
+    }
+}
+.form-write-to-us {
+    max-width: 430px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(189, 189, 189, 0.04);
+    border-radius: 8px;
+    padding: 20px 50px 20px 30px;
+    width: 100%;
+    &__legend {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        display: block;
+        @include adaptiveValue("font-size", 12, 10);
+        line-height: 140%;
+        margin-bottom: 4px;
+    }
+
+    &__input {
+        display: block;
+        box-shadow: inset 0px 4px 15px #FAFAFC;
+        border-radius: 8px;
+        border: 1px solid $mainColor;
+        background: #FFFFFF;
+        padding: 10px 13px 11px 20px;
+        margin-bottom: 15px;
+        &::placeholder {
+            font-size: 12px;
+            line-height: 140%;
+            color: #9E9E9E;
+        }
+        width: 100%;
+    }
+
+    &__textarea {
+        min-height: 80px;
+        resize: none;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .form-write-to-us__input {
+            height: 38px;
+            margin-bottom: 0px;
+            margin-right: 15px;
+        }
+    }
+
+    &__capture {
+        height: 35px;
+        width: 100px;
+    }
+
+    &__btn {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+        color: #FFFFFF;
+        border: 2px solid #FF8A50;
+        background: #FF8A50;
+        border-radius: 8px;
+        padding: 11px;
+        width: 100%;
+    }
+}
+.checkbox {
+
+    &__group {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        position: relative;
+        display: flex;
+        padding-left: 30px;
+        @include adaptiveValue("font-size", 12, 10);
+        line-height: 140%;
+        font-family: $fontSubFamile;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__input + &__span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid $orange;
+    }
+
+    &__input + &__span::before {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+    }
+
+    &__input:checked + &__span::before {
+        content: "\2714";
+        opacity: 1;
+    }
+}
+
+.input-group {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    right: 10px;
+    @include adaptiveValue("right", 10, -40);
+    top: 6px;
+    color: rgb(255, 0, 0);
+    will-change: transform;
+    transform: translateY(25px);
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    &.active {
+        transform: translateY(0px);
+        pointer-events: auto;
+        opacity: 1;
+    }
+}
+
+.svg-refresh {
+    @include adaptiveValue("width", 25, 15);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 870px) {
+    .to-contact-us__content:last-child {
+        flex-wrap: wrap;
+    }
+    .who-are-we {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .who-are-we__title {
+        text-align: center;
+    }
+    .who-are-we__text {
+        margin: 0 auto;
+        max-width: 750px;
+    }
+    .to-contact-us__form {
+        margin: 0 auto;
+    }
+    .who-are-we__item {
+        @include adaptiveValue("width", 96, 60);
+        height: 114px;
+    }
+    .contact__list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .contact__span {
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 450px) {
+    .form-write-to-us__group {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-write-to-us__capture {
+        margin-top: 10px;
+    }
+    .form-write-to-us__group .form-write-to-us__input {
+        margin-right: 0;
+    }
+}

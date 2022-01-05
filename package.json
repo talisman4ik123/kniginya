@@ -11,7 +11,9 @@
   },
   "author": "Dmitriy Zaitsev",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "just-validate": "^3.2.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",

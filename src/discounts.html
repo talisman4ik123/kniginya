@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title":"Акции"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+            <section class="pages-nav">
+                <div class="pages-nav__container">
+                    <ul class="pages__list">
+                        <li class="pages__item">
+                            <a href="index.html" class="pages__link">Главная</a>
+                        </li>
+                        <li class="pages__item">Акции</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="discounts">
+                <div class="discounts__container">
+                    <div class="discounts__inner">
+                        <h1 class="title discounts__title">Акции</h1>
+                        <div class="search-box discounts__search-box">
+                            <button class="search-box__btn _icon-search"></button>
+                            <input type="text" class="search-box__input" placeholder="Поиск по товарам">
+                        </div>
+                        <div class="filters discounts__filters">
+                            <div class="filters__subgroup">
+                                <div class="view-filters filters__view">
+                                    <span class="view-filters__caption discounts__caption">Вид:</span>
+                                    <ul class="view-filters__list">
+                                        <li class="view-filters__item">
+                                            <button class="view-filters__btn">
+                                                <span class="view-filters__span"></span>
+                                            </button>
+                                        </li>
+                                        <li class="view-filters__item">
+                                            <button class="view-filters__btn">
+                                                <span class="view-filters__span"></span>
+                                                <span class="view-filters__span"></span>
+                                                <span class="view-filters__span"></span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="filters__link _icon-scales"><span class="filters__link-span">Сравнение товаров (<span>2</span>)</span></a>
+                            </div>
+                            <div class="sort-filters filters__sort">
+                                <span class="sort-filters__caption discounts__caption">Сортировка:</span>
+                                <ul class="sort-filters__list _icon-down-arrow">
+                                    <li class="sort-filters__item"><a class="sort-filters__link">По умолчанию</a></li>
+                                    <li class="sort-filters__item"><a class="sort-filters__link">По убыв. цены</a></li>
+                                    <li class="sort-filters__item"><a class="sort-filters__link">По возраст. цены</a></li>
+                                    <li class="sort-filters__item"><a class="sort-filters__link">По алфавиту</a></li>
+                                </ul>
+                            </div>
+                            <div class="items-filters filters__items">
+                                <span class="items-filters__caption discounts__caption">На странице:</span>
+                                <ul class="items-filters__list _icon-down-arrow">
+                                    <li class="items-filters__item"><a class="items-filters__link">20</a></li>
+                                    <li class="items-filters__item"><a class="items-filters__link">15</a></li>
+                                    <li class="items-filters__item"><a class="items-filters__link">10</a></li>
+                                    <li class="items-filters__item"><a class="items-filters__link">25</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="discounts__wrapper">
+                            <ul class="discounts__list">
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book2.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book3.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book3.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book2.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book3.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book3.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book2.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book3.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book1.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+    
+                                <li class="discounts__item item-discount">
+                                    <img src="images/books/book3.png" alt="Изображение книги 12 Стульев" class="item-discount__img">
+                                    <h4 class="item-discount__title">12 Стульев + Золотой телёнок</h4>
+                                    <div class="price__group">
+                                        <span class="price__before item-discount__price">30 000 ₴</span>
+                                        <span class="price__after item-discount__price">30 000 ₴</span>
+                                    </div>
+                                    <div class="item-discount__bottom">
+                                        <button class="item-discount__btn _icon-shopping-bag">Купить</button>
+                                        <div class="item-discount__icons">
+                                            <button class="item-discount__subbtn _icon-like"></button>
+                                            <button class="item-discount__subbtn _icon-scales"></button>
+                                        </div>
+                                    </div>
+                                    <span class="item-discount__span">-20%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html',{})
+
+    <script src="js/script.min.js"></script>
+    </div>
+</body>
+
+</html>

@@ -113,3 +113,7 @@ body {
     border-radius: 12px;
     padding: 20px 20px 30px;
 }
+
+input:-webkit-autofill {
+    transition: all 5000s ease-in-out;
+}
