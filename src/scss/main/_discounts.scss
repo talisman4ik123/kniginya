@@ -15,7 +15,7 @@
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     &__caption {
@@ -45,6 +45,101 @@
             opacity: 1;
             pointer-events: auto;
             transform: scale(1);
+            
+            &_column {
+                grid-template-columns: 1fr;
+
+                .item-discount {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    &__text {
+                        display: block;
+                        font-family: $fontSubFamile;
+                        font-size: 12px;
+                        line-height: 140%;
+                        color: #000;
+                        max-width: 640px;
+                    }
+                    &__title {
+                        padding-left: 0;
+                        max-width: 230px;
+                    }
+                    &__span {
+                        right: auto;
+                        left: 5px;
+                    }
+                    &__main {
+                        justify-content: center;
+                        margin-left: 20px;
+                    }
+                    &__btn {
+                        margin-right: 15px;
+                    }
+                    .price__group {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .price__before {
+                        margin-bottom: 5px;
+                        font-size: 14px;
+                    }
+                    .price__after {
+                        font-size: 18px;
+                        font-weight: 800;
+                    }
+                }
+
+                @media (max-width: 800px) {
+                    .item-discount__bottom {
+                        flex-wrap: wrap;
+                    }
+                    .item-discount__btn {
+                        margin-bottom: 15px;
+                    }
+                    .item-discount__img {
+                        width: 186px;
+                        height: 88px;
+                    }
+                    .item-discount__content {
+                        margin-left: -30px;
+                    }
+                }
+
+                @media (max-width: 550px) {
+                    .item-discount__main {
+                        position: absolute;
+                        margin-left: 0;
+                        top: 120px;
+                    }
+                    .item-discount {
+                        min-height: 260px;
+                        .price__before {
+                            font-size: 12px;
+                        }
+                        .price__after {
+                            font-size: 16px;
+                        }
+                        .item-discount__btn {
+                            padding: 6px 12px;
+                            max-width: 94px;
+                        }
+                        .price__group {
+                            margin-bottom: 12px;
+                        }
+                        &__content {
+                            padding-right: 10px;
+                        }
+                        &__text {
+                            font-size: 10px;
+                        }
+                        &__img {
+                            width: 155px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -394,6 +489,20 @@
         margin-bottom: 15px;
     }
 
+    &__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        display: none;
+    }
+
     &__bottom {
         display: flex;
         align-items: center;
@@ -430,7 +539,7 @@
         display: block;
         background-color: transparent;
         &::before {
-            font-size: rem(20);
+            font-size: 20px;
         }
         &:first-child {
             margin-right: 8px;

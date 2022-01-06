@@ -36,7 +36,8 @@ function addItemInPage(list, items, itemCount) {
             continue;
         }
         if (itemCount >= arrayList.length && arrayList.length != 0) {
-            for (let k = 0; k < arrayList.length; k++) {
+            const len = arrayList.length;
+            for (let k = 0; k < len; k++) {
                 let temp = 0;
                 lists[i].append(arrayList[temp]);
                 arrayList.shift();
@@ -78,7 +79,6 @@ function clickBtn(list) {
                     });
                 }
             }
-            console.log(document.documentElement.scrollHeight);
         });
     });
 }

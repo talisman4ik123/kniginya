@@ -154,12 +154,52 @@ function selectItem(selectableItem) {
     }
 }
 
+
+import { pagination } from "./libs/pagination.js";
+
+
+
 if (document.title == "Акции") {
     openSelect("sort-filters__list");
     selectItem("sort-filters__item");
     openSelect("items-filters__list");
     selectItem("items-filters__item");
-}
 
-import { pagination } from "./libs/pagination.js";
-pagination(".discounts__list", ".discounts__item", 10);
+    const discountsListStart = document.querySelector(".discounts__list");
+    const discountsWrapper = document.querySelector(".discounts__wrapper");
+    const discountsItems = document.querySelectorAll(".discounts__item");
+    pagination(".discounts__list", ".discounts__item", 20);
+
+    const filtersLinks = document.querySelectorAll(".items-filters__link");
+    filtersLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            const discountLists = document.querySelectorAll(".discounts__list");
+            discountLists.forEach(element => {
+                element.parentNode.removeChild(element);
+            });
+            const pageGroup = document.querySelector(".page-group");
+            if (pageGroup != null) {
+                pageGroup.parentNode.removeChild(pageGroup);
+            }
+
+            for (let i = 0; i < discountsItems.length; i++) {
+                discountsListStart.append(discountsItems[i]);
+            }
+
+            discountsWrapper.append(discountsListStart);
+            pagination(".discounts__list", ".discounts__item", link.innerText);
+        });
+    });
+
+    const filterBtns = document.querySelectorAll(".view-filters__btn");
+
+    filterBtns[0].addEventListener("click", () => {
+        const discountsListActive = document.querySelector(".discounts__list--active");
+        discountsListActive.classList.add("discounts__list--active_column");
+    });
+
+    filterBtns[1].addEventListener("click", () => {
+        const discountsListActive = document.querySelector(".discounts__list--active");
+        discountsListActive.classList.remove("discounts__list--active_column");
+    });
+}
