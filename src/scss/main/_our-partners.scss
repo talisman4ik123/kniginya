@@ -19,15 +19,9 @@
         padding-right: 50px;
     }
 
-    &__list {
-    }
-
     &__item {
         width: 80px;
         height: 80px;
-    }
-
-    &__img {
     }
 }
 .swiper-container {
@@ -35,8 +29,7 @@
     overflow: hidden;
     background-color: #fff;
 }
-.swiper-wrapper {
-}
+
 .swiper-slide {
     display: flex;
     justify-content: center;

@@ -205,9 +205,12 @@ import { pagination } from "./libs/pagination.js";
 function catalogMenu() {
     const catalogBtn = document.querySelector(".catalog__btn");
     const leftMenu = document.querySelector(".left-menu");
+    const catalogMenuSpans = document.querySelectorAll(".catalog__span");
     catalogBtn.addEventListener("click", () => {
         catalogBtn.classList.toggle("catalog__btn--active");
-
+        catalogMenuSpans.forEach(element => {
+            element.classList.toggle("catalog__span--active")
+        });
         window.scrollTo({
             top: 0,
             behavior: "smooth"
