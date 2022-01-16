@@ -10,13 +10,151 @@
 //@import "libs/";
 @import "libs/map";
 @import "libs/pagination";
+@import "libs/swiper.scss";
 
 @import "main/header";
+@import "main/our-partners";
 @import "main/pages-nav";
+@import "main/kniginya-main";
 @import "main/about";
 @import "main/payment-delivery";
 @import "main/binding";
 @import "main/to-contact-us";
-
+@import "main/world-of-books";
 @import "main/discounts";
+@import "main/catalog-group";
+@import "main/basket";
 @import "main/footer";
+
+._pc {
+    .menu__link {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1.5px;
+            width: 0px;
+            bottom: -2px;
+            left: 0;
+            background-color: $orange;
+            transition: width .3s ease;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    .header-icons__link {   
+        &::before {
+            transition: color .3s ease;
+        }
+        &:hover {
+            &::before {
+                color: $orange;
+            }
+        }
+    }
+    ._icon-shopping-bag {
+        span {
+            transition: color .3s ease, background-color .3s ease;
+        }
+        &:hover {
+            span {
+                background-color: $mainColor;
+                color: $orange;
+            }
+        }
+    }
+    .left-menu__link, .footer-links__link {
+        transition: color .3s ease;
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet, .swiper-button-next-partners, .swiper-button-prev-partners {
+        transition: transform .3s ease;
+        will-change: transform;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .all-books__item {
+        transition: box-shadow .3s ease;
+        &:hover {
+            box-shadow: 0px 0px 10px 5px grey;
+        }
+    }
+    .page-group__item {
+        transition: box-shadow .3s ease;
+        &:hover {
+            box-shadow: 0px 0px 5px 2px grey;
+        }
+        &--active {
+            &:hover {
+                box-shadow: none; 
+            }
+        }
+    }
+
+    .kniginya-main-text__link {
+        text-decoration: none;
+        transition: text-decoration .3s ease;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .social__link {
+        &::before {
+            transition: color .3s ease;
+            color:white;
+        }
+        &:hover {
+            &::before {
+                color: $orange;
+            }
+        }
+    }
+
+    .like-btn, .scales-btn {
+        &::before {
+            transition: color .3s ease;
+        }
+        &:hover {
+            &::before {
+                color: $orange;
+            }
+        }
+    }
+
+    .world-of-books__link {
+        &::after {
+            transition: width .3s ease;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.page-group__list {
+    padding-bottom: 5px;
+}
+
+.search-box__input {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    &:focus {
+        border-top: 1px solid $orange;
+        border-bottom: 1px solid $orange;
+        border-right: 1px solid $orange;
+    }
+}

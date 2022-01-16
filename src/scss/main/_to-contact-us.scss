@@ -319,6 +319,12 @@
 }
 
 @media (max-width: 450px) {
+    .svg-refresh {
+        @include adaptiveValue("width", 25, 15);
+        margin-left: 12px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
     .form-write-to-us__group {
         flex-wrap: wrap;
         align-items: center;

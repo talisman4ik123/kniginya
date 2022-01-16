@@ -1,0 +1,100 @@
+.our-partners {
+    background-color:#E5E5E5;
+
+    &__inner {
+        position: relative;
+        @include adaptiveValue("padding-bottom", 100, 60);
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__slider {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__img {
+    }
+}
+.swiper-container {
+    
+    overflow: hidden;
+    background-color: #fff;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-button-prev-partners {
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 115px;
+    &::before {
+        font-size: 24px;
+        color: $orange;
+    }
+}
+
+.swiper-button-next-partners {
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 115px;
+    &::before {
+        font-size: 24px;
+        color: $orange;
+    }
+}
+
+
+.kniginya-main-text {
+
+    background-color:#E5E5E5;
+
+    &__inner {
+        @include adaptiveValue("padding-bottom", 80, 60);
+        display: flex;
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        &:first-child {
+            margin-right: 30px;
+            @media (max-width: 900px) {
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+        }
+        @include adaptiveValue("font-size", 14, 12);
+        line-height: 180%;
+        font-family: $fontSubFamile;
+    }
+
+    &__link {
+        display: inline;
+        color: #FF8A50;
+    }
+}

@@ -1,0 +1,209 @@
+.kniginya-main {
+
+    &__search-box {
+        margin-bottom: 50px;
+    }
+}
+.catalog-group {
+
+    &__main {
+        width: 100%;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        @include adaptiveValue("font-size", 32, 28);
+    }
+}
+
+.catalog-group-content {
+    overflow: hidden;
+    position: relative;
+    &__img {
+        width: 80px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    &__item {
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0px 4px 15px rgba(189, 189, 189, 0.04);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        min-width: 230px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    &__list {
+        position: absolute;
+        transform: scale(0);
+        opacity: 0;
+        pointer-events: none;
+        will-change: transform;
+        transition: all .3s;
+        margin-bottom: 20px;
+        &--active {
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            transition: all .5s;
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1);
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 10px;
+        max-width: 160px;
+    }
+
+    &__caption {
+        font-family: $fontSubFamile;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 140%;
+        margin-bottom: 12px;
+        max-width: 160px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 110%;
+    }
+
+    &__sale {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 44px;
+        height: 20px;
+        background-color: $orange;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+        border-radius: 24px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    &__btn {
+        padding: 6px 16px;
+        background-color: transparent;
+        border: 2px solid #FF8A50;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 130%;
+        color: #FF8A50;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        span {
+            &::before {
+                font-size: 14px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__subbtn {
+        background-color: transparent;
+        font-size: 18px;
+        &:first-child {
+            margin-right: 8px;
+        }
+    }
+}
+
+.sales {
+    .catalog-group-content__list {
+        .catalog-group-content__item {
+            align-items: start;
+            .catalog-group-content__img {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+            .catalog-group-content__title {
+                margin-bottom: 15px;
+            }
+            .catalog-group-content__price-group {
+                .catalog-group-content__price:first-child {
+                    font-size: 11px;
+                    line-height: 140%;
+                    color: #9E9E9E;
+                    margin-right: 10px;
+                    text-decoration-line: line-through;
+                    font-weight: normal;
+                }
+            }
+            .catalog-group-content__bottom {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    .catalog-group-content__main {
+        width: 100%;
+    }
+}
+
+.catalog-group__main {
+    position: relative;
+    .kniginya-main__search-box {
+        margin-bottom: 25px;
+    }
+    .discounts__filters {
+        margin-bottom: 70px;
+    }
+    @media (max-width: 450px) {
+        .filters .items-filters, .sort-filters {
+            flex-direction: column;
+        }
+        .discounts__filters {
+            margin-bottom: 110px;
+        }
+        .filters .items-filters {
+            right: 0;
+            top: auto;
+        }
+    }
+}
+
+.catalog-group-filter {
+    .sort-filters {
+       left: 0;
+    }
+}

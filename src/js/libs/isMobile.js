@@ -1,4 +1,4 @@
-const isMobile = {
+export const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
     },
@@ -18,7 +18,7 @@ const isMobile = {
     Windows: function () {
         return navigator.userAgent.match(/IEMobile/i);
     },
-    
+
     any: function () {
         return (
             isMobile.Android() ||

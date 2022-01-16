@@ -73,10 +73,17 @@ function clickBtn(list) {
             for (let i = 0; i < lists.length; i++) {
                 if (i == count) {
                     lists[i].classList.add(`${listName}--active`);
-                    window.scrollTo({
-                        top: document.querySelector(".discounts__search-box").offsetHeight,
-                        behavior: "smooth"
-                    });
+                    if (lists[i].classList.contains("all-books__list--active")) {
+                        window.scrollTo({
+                            top: document.querySelector(".kniginya-main-slider").offsetHeight + document.querySelector("header").offsetHeight,
+                            behavior: "smooth"
+                        });
+                    } else {
+                        window.scrollTo({
+                            top: document.querySelector("header").offsetHeight,
+                            behavior: "smooth"
+                        });
+                    }
                 }
             }
         });
